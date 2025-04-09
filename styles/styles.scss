@@ -1,6 +1,56 @@
+// device width
+$desktop-width: 1440px;
+$mobile-width: 375px;
+// color
+$white: hsl(0,0%,100%);
+$slate-300: hsl(212,45%,80%);
+$slate-500: hsl(216,15%,48%);
+$slate-900: hsl(218,44%,22%);
+// font
+$paragraph-size:15px;
+$font-family: "Outfit",sans-serif;
+$font-weight-400:400;
+$font-weight-700:700;
+
+@use 'mixin';
+body{
+    background-color: $slate-300;
+    max-width:$desktop-width;
+    height:100vh;
+    // debug
+    // border:5px black solid;
+    @include mixin.flex-center();
+    & div.card{
+        align-self: center;
+        background-color: $white;
+        padding:15px;
+        border-radius:10px;
+        // need to check mediia query
+        width:(375px*0.75);
+        @include mixin.flex-center();
+
+        & img{
+            border-radius:8px;
+            width:100%;
+            max-width: 100%;
+            height: auto;
+        }
+        & .title{
+            @include mixin.text(700,$slate-900);
+            @include mixin.text-align(center);
+        }
+        & .paragraph{
+            @include mixin.text(400,$slate-500);
+            @include mixin.text-align(center);
+        }
+    }
+    
+}
 .attribution{
+    position: absolute;
+    bottom:0;
     font-size: 11px;
-    text-align: center;
+    @include mixin.text-align(center);
     & a{
         color: hsl(228, 45%, 44%); 
     }
