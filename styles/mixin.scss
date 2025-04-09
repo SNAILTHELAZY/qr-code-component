@@ -1,9 +1,10 @@
-@mixin text($weight:400,$color:white) {
+@mixin text($weight:400,$color:white,$size:medium) {
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-weight: $weight;
     font-style: normal;
     color:$color;
+    font-size:$size;
   }
   
 @mixin flex-center($direction:column){

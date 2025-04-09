@@ -28,7 +28,7 @@ Here is the mobile preview for the project.
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://snailthelazy.github.io/qr-code-component/](https://snailthelazy.github.io/qr-code-component/)
 
 ## My process
 

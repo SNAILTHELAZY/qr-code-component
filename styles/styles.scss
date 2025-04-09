@@ -36,7 +36,7 @@ body{
             height: auto;
         }
         & .title{
-            @include mixin.text(700,$slate-900);
+            @include mixin.text(700,$slate-900,large);
             @include mixin.text-align(center);
         }
         & .paragraph{

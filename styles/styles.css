@@ -30,6 +30,7 @@ body div.card .title {
   font-weight: 700;
   font-style: normal;
   color: hsl(218, 44%, 22%);
+  font-size: large;
   text-align: center;
 }
 body div.card .paragraph {
@@ -38,10 +39,13 @@ body div.card .paragraph {
   font-weight: 400;
   font-style: normal;
   color: hsl(216, 15%, 48%);
+  font-size: medium;
   text-align: center;
 }
 
 .attribution {
+  position: absolute;
+  bottom: 0;
   font-size: 11px;
   text-align: center;
 }
